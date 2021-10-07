@@ -2,12 +2,13 @@ package org.example;
 
 import java.util.ArrayList;
 
-enum Type{
-    Relevant,
-    Irrelevant,
-    RelevantNotFound
-}
-public class CreateRecord {
+
+public class Record {
+    enum Type{
+        Relevant,
+        Irrelevant,
+        RelevantNotFound
+    }
     public static void fillRecord() {
         int n = 10;
         int m = 15;

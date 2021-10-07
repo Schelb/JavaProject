@@ -9,8 +9,7 @@ import java.util.ArrayList;
 public class App 
 {
     public static void main( String[] args ) {
-        CreateRecord createRecord= new CreateRecord();
-        createRecord.fillRecord();
+
     }
 }
 
