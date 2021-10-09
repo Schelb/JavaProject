@@ -2,10 +2,9 @@ package org.example;
 
 public class EfficiencyEvaluations {
     //recall // полнота
-    public double recall(int countRelevantDocsFound , int countRelevantDocs){
+    public double getRecall(int countRelevantDocsFound , int countRelevantDocs){
         double result=0.0;
         try{
-
             if(countRelevantDocs==0) throw new Exception("Общее число релевантных документов не может быть равно 0");
             if(countRelevantDocs<countRelevantDocsFound) throw new Exception("Общее число релевантных документов не может быть меньшьше количеству найденных релевантых документов");
             result= (double)countRelevantDocsFound/(double)countRelevantDocs;
@@ -16,7 +15,7 @@ public class EfficiencyEvaluations {
         return result;
     }
     //precision // точность
-    public double precision(int countRelevantDocsFound , int countDocsFound){
+    public double getPrecision(int countRelevantDocsFound , int countDocsFound){
         double result=0.0;
         try{
             if(countDocsFound==0) throw new Exception("Общее число найденных документов не может быть равно 0");
@@ -28,7 +27,7 @@ public class EfficiencyEvaluations {
         }
         return result;
     }
-    public double fMeasure(double precision, double recall){
+    public double getF_Measure(double precision, double recall){
         double result=0.0;
         try{
             if(precision<=0) throw new Exception("Точность не может быть меньше или равно 0");
