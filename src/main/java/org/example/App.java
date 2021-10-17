@@ -23,8 +23,8 @@ public class App extends Application
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("FX");
-        stage.setWidth(250);
-        stage.setHeight(200);
+        stage.setWidth(1500);
+        stage.setHeight(500);
         stage.show();
     }
 }
