@@ -1,43 +1,35 @@
 package org.example;
 
-public class CreatorRecord {
-    public Record createRelevantRecord() {
-        /*       int n = 10;
-        int m = 15;
-        ArrayList<Record.Type> result = new ArrayList<>();
+import java.util.ArrayList;
+
+class CreatorRecords {
+    public ArrayList<Record> creatRecords(int n, int m){
+        ArrayList<Record> result = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             double j = Math.random();
             if (j > 0.5) {
-                result.add(Record.Type.Relevant);
+                result.add(createRelevantRecord());
             } else {
-                result.add(Record.Type.Irrelevant);
+                result.add(createIrrelevantRecord());
             }
         }
         for (int i = n; i < m; i++) {
-            result.add(Record.Type.RelevantNotFound);
+            result.add(createRelevantNotFoundRecord());
         }
-        for (int i = 0; i < m; i++) {
-            System.out.println(i + 1 + " " + result.get(i));
-
-        double j = Math.random();
-        if (j > 0.5) {
-            record.setType(Type.Relevant);
-        } else {
-            record.setType(Type.Irrelevant);
-        }
-        return record;
-        } */
+        return result;
+    }
+    private Record createRelevantRecord() {
         Record recordRelevant=  new Record();
         recordRelevant.setType(RecordType.Relevant);
         return recordRelevant;
 
     }
-    public Record createIrrelevantRecord(){
+    private Record createIrrelevantRecord(){
         Record recordIrrelevant=  new Record();
         recordIrrelevant.setType(RecordType.Irrelevant);
         return recordIrrelevant;
     }
-    public Record createRelevantNotFoundRecord(){
+    private Record createRelevantNotFoundRecord(){
         Record recordRelevantNotFoundRecord=  new Record();
         recordRelevantNotFoundRecord.setType(RecordType.RelevantNotFound);
         return recordRelevantNotFoundRecord;
