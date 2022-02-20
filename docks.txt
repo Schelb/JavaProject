@@ -1,0 +1,5 @@
+ListOfRecords{countDocs= 15
+countDocsFound= 12
+countRelevantDocs= 13
+countRelevantDocsFound= 10
+}
