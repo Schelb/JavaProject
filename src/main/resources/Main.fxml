@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller">
+   <children>
+      <Button fx:id="btnCreateData" layoutX="414.0" layoutY="162.0" mnemonicParsing="false" onAction="#clickBtnCreateData" prefHeight="25.0" prefWidth="150.0" text="Сгенерировать данные" />
+      <Button fx:id="btnEfficiencyEvaluations" layoutX="415.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickBtnEfficiencyEvaluations" prefHeight="25.0" prefWidth="149.0" text="Рассчитать метрики" />
+      <Button layoutX="415.0" layoutY="280.0" mnemonicParsing="false" onAction="#clickBtnShowGraph" prefHeight="25.0" prefWidth="148.0" text="Показать график" />
+      <TableView fx:id="tableData" layoutY="62.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="countFindDocuments" layoutX="480.0" layoutY="41.0" prefHeight="25.0" prefWidth="70.0" text="10" />
+      <TextField fx:id="countDocuments" layoutX="480.0" layoutY="98.0" prefHeight="25.0" prefWidth="70.0" text="15" />
+      <Label layoutX="27.0" layoutY="45.0" text="Сгенеригоранные данные:" />
+      <Label layoutX="222.0" layoutY="41.0" prefHeight="25.0" prefWidth="249.0" text="Введите количество найденных документов" />
+      <Label layoutX="222.0" layoutY="98.0" text="Введите общее количество документов" />
+      <Label fx:id="labelRecall" layoutX="27.0" layoutY="272.0" text="Recall=" />
+      <Label fx:id="labelPrecision" layoutX="27.0" layoutY="305.0" text="Precision=" />
+      <Label fx:id="labelF_Measure" layoutX="27.0" layoutY="341.0" text="F-Measure=" />
+   </children>
+</AnchorPane>
